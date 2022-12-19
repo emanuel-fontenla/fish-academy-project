@@ -1,0 +1,15 @@
+body { font-family: 'Nunito Sans', sans-serif; background-color: whitesmoke; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant', serif; }
+a { text-decoration: none; }
+
+.content { width: 100%; max-width: 1160px; margin: 0 auto; } 
+
+header { border: 1px dashed rebeccapurple; z-index: var(--header-z-index); height: 69px; position: sticky; inset: 0; background-color: var(--carbon); }
+header .content { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+header .content .logo figure { height: 50px; width: 50px; }
+header .content .logo img { height: 100%; width: 100%; }
+header .navbar ul { display: flex; gap: 16px;}
+
+main {  margin: 2rem auto; display: flex; flex-direction: column; gap: 1.5rem; }
+
+footer { border: 1px dashed rebeccapurple; height: 200px; display: flex; align-items: center; justify-content: center; } 

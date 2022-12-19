@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Fish Academy</title>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/index.css" />
+    <!-- Title -->
+    <title>Proyecto Final</title>
   </head>
   <body>
-    <section class="grilla">
+    <!--! HEADER -->
+    <header>
       <div class="content">
-        <div class="item-30">
-          <div class="item-content">
-            <div class="badge square top-left-corner"></div>
-            <div class="badge square bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-70">
-          <div class="item-content">
-            <div class="badge circular top-left-corner"></div>
-            <div class="badge circular bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-50">
-          <div class="item-content">
-            <div class="badge circular bottom-left-corner"></div>
-          </div>
-        </div>
-        <div class="item-50">
-          <div class="item-content">
-            <div class="badge square top-left-corner"></div>
-          </div>
-        </div>
-        <div class="item-25">
-          <div class="item-content"></div>
-        </div>
-        <div class="item-25">
-          <div class="item-content">
-            <div class="badge circular bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-25">
-          <div class="item-content">
-            <div class="badge square bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-25">
-          <div class="item-content"></div>
-        </div>
-        <div class="item-33">
-          <div class="item-content">
-            <div class="badge circular bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-33">
-          <div class="item-content">
-            <div class="badge square bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-33">
-          <div class="item-content">
-            <div class="badge circular bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-70">
-          <div class="item-content">
-            <div class="badge square bottom-left-corner"></div>
-          </div>
-        </div>
-        <div class="item-30">
-          <div class="item-content">
-            <div class="badge square top-left-corner"></div>
-          </div>
-        </div>
-        <div class="item-50">
-          <div class="item-content">
-            <div class="badge circular bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-30">
-          <div class="item-content">
-            <div class="badge square top-left-corner"></div>
-            <div class="badge circular bottom-right-corner"></div>
-          </div>
-        </div>
-        <div class="item-20">
-          <div class="item-content">
-            <div class="badge square bottom-right-corner"></div>
-          </div>
-        </div>
+        <a href="#" class="logo">
+          <figure>
+            <img
+              src="https://pbs.twimg.com/profile_images/1576909367315660801/nzuLsqbG_400x400.jpg"
+              alt="Escudo de Peñarol"
+              loading="lazy"
+            />
+          </figure>
+        </a>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
+
+    <!--! MAIN -->
+    <main>
+      <!--* HERO  -->
+      <section class="hero">
+        <div class="content">
+          <a href="#">
+            <figure>
+              <img src="#" alt="Desc. de la foto" loading="lazy" />
+            </figure>
+          </a>
+          <h1>Hero title</h1>
+        </div>
+      </section>
+      <!--* NEWS THUMBNAILS -->
+      <section class="news-thumbnails">
+        <div class="content">
+          <article class="news-thumbnail">
+            <a href="#">
+              <img src="#" alt="Noticia 1" loading="lazy" />
+              <h5>Fecha</h5>
+              <h3>Noticia 1</h3>
+            </a>
+          </article>
+          <article class="news-thumbnail">
+            <a href="#">
+              <img src="#" alt="Noticia 2" loading="lazy" />
+              <h5>Fecha</h5>
+              <h3>Noticia 2</h3>
+            </a>
+          </article>
+          <article class="news-thumbnail">
+            <a href="#">
+              <img src="#" alt="Noticia 3" loading="lazy" />
+              <h5>Fecha</h5>
+              <h3>Noticia 3</h3>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!--* NEWS -->
+      <section class="news">
+        <div class="content">
+          <!-- LEFT PANEL -->
+          <div class="news-previews">
+            <div class="card">
+              <div class="card-img">
+                <figure>
+                  <img src="" alt="Noticia" loading="lazy" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <h6>Título</h6>
+                <p>Descripción</p>
+                <a href="#">Ver más</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img">
+                <figure>
+                  <img src="" alt="Noticia" loading="lazy" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <h6>Título</h6>
+                <p>Descripción</p>
+                <a href="#">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <!-- RIGHT PANEL -->
+          <div class="news-side-panel">
+            <ul>
+              <a href="#"><li>Op 1</li></a>
+              <a href="#"><li>Op 2</li></a>
+              <a href="#"><li>Op 3</li></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--! FOOTER -->
+    <footer class="footer">
+      <span>footer</span>
+    </footer>
   </body>
 </html>
