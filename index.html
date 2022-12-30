@@ -6,20 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--* Styles -->
-    <!-- TODO: ONE STYLESHEET -->
-    <!-- Index Does not work on github pages -->
-    <link rel="stylesheet" href="/styles/index.css" />
-    <!-- <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/sections/hero.css" />
-    <link rel="stylesheet" href="styles/sections/news.css" /> -->
+    <link rel="stylesheet" href="styles/styles.css" />
     <!-- Title -->
     <title>Proyecto Final</title>
   </head>
   <body>
     <!--! HEADER -->
-    <header>
+    <header class="main-header">
       <div class="content">
         <a href="#" class="logo">
           <figure>
@@ -42,14 +37,13 @@
     </header>
 
     <!--! MAIN -->
-    <!-- TODO: REMOVE MAIN -->
-    <main>
+    <main class="main-content">
       <!--* HERO  -->
       <section class="hero">
         <div class="content">
           <a href="#">
             <figure>
-              <img src="#" alt="Desc. de la foto" />
+              <img src="#" alt="Desc" />
             </figure>
           </a>
           <h1>Hero title</h1>
@@ -60,22 +54,27 @@
         <div class="content">
           <article class="news-thumbnail">
             <a href="#">
-              <!-- TODO" ADD FIGURE -->
-              <img src="#" alt="Noticia 1" />
+              <figure>
+                <img src="#" alt="Noticia 1" />
+              </figure>
               <span>Fecha</span>
               <h3>Noticia 1</h3>
             </a>
           </article>
           <article class="news-thumbnail">
             <a href="#">
-              <img src="#" alt="Noticia 2" />
+              <figure>
+                <img src="#" alt="Noticia 2" />
+              </figure>
               <h5>Fecha</h5>
               <h3>Noticia 2</h3>
             </a>
           </article>
           <article class="news-thumbnail">
             <a href="#">
-              <img src="#" alt="Noticia 3" />
+              <figure>
+                <img src="#" alt="Noticia 3" />
+              </figure>
               <h5>Fecha</h5>
               <h3>Noticia 3</h3>
             </a>
@@ -114,18 +113,19 @@
           </div>
           <!-- RIGHT PANEL -->
           <div class="news-side-panel">
-            <ul>
-              <a href="#"><li>Op 1</li></a>
-              <a href="#"><li>Op 2</li></a>
-              <a href="#"><li>Op 3</li></a>
-            </ul>
+            <figure>
+              <img
+                src="assets/gif/robeiro-dancing.gif"
+                alt="Robatto tirando los pasos prohibidos"
+              />
+            </figure>
           </div>
         </div>
       </section>
     </main>
 
     <!--! FOOTER -->
-    <footer class="footer">
+    <footer class="main-footer">
       <span>footer</span>
     </footer>
   </body>

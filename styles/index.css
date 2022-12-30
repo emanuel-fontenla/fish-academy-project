@@ -1,7 +1,0 @@
-@import '/styles/reset.css';
-@import '/styles/variables.css';
-@import '/styles/global.css';
-/* HERO */
-@import '/styles/sections/hero.css';
-/* NEWS */
-@import '/styles/sections/news.css';

@@ -1,0 +1,36 @@
+body { font-family: 'Nunito Sans', sans-serif; background-color: whitesmoke; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant', serif; }
+a { text-decoration: none; }
+
+.content { width: 100%; max-width: 1160px; margin: 0 auto; } 
+/* TODO: CHANGE REM TO PX */
+.main-header { border: 1px dashed rebeccapurple; z-index: var(--header-z-index); height: 69px; position: sticky; inset: 0; background-color: var(--carbon); }
+.main-header .content { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.main-header .content .logo figure { height: 50px; width: 50px; }
+.main-header .content .logo img { height: 100%; width: 100%; }
+.main-header .navbar ul { display: flex; gap: 16px;}
+
+.main-content {  padding: 2rem 0; display: flex; flex-direction: column; gap: 1.5rem; }
+
+.main-footer { border: 1px dashed rebeccapurple; height: 200px; display: flex; align-items: center; justify-content: center; } 
+
+/*! NEWS THUMBNAILS */
+.news-thumbnails .content { border: 1px dashed rebeccapurple; height: 120px; display: flex; gap: 1rem; }
+.news-thumbnails .content .news-thumbnail { border: 1px dashed cornflowerblue; width: 100%; max-width: 33.33%; }
+
+/*! NEWS */
+.news .content { border: 1px dashed rebeccapurple; display: flex; gap: 1rem; }
+
+.news .content .news-previews { border: 1px dashed cornflowerblue; width: 100%; max-width: 66.3%; display: flex; flex-direction: column; gap: 1rem 0; }
+.news .content .news-previews .card { border: 1px dashed rebeccapurple; padding: 1rem; display: flex; gap: 1rem; }
+.news .content .news-previews .card-img { border: 1px dashed rebeccapurple; }
+.news .content .news-previews .card-img figure { height: 150px; width: 150px; }
+.news .content .news-previews .card-img img { border: 1px dashed rebeccapurple; height: 100%; width: 100%; object-fit: cover; }
+.news .content .news-previews .card-content { display: flex; flex-direction: column; }
+
+.news .content .news-side-panel { border: 1px dashed cornflowerblue; flex: 1; }
+.news .content .news-side-panel figure {}
+.news .content .news-side-panel figure img { height: 100%; width: 100%;}
+
+/*! HERO */
+.hero .content { border: 1px dashed rebeccapurple; height: 400px; display: flex; flex-direction: column; }
