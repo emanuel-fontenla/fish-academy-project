@@ -1,24 +1,49 @@
+html { scroll-behavior: smooth; }
 body { font-family: 'Nunito Sans', sans-serif; background-color: whitesmoke; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant', serif; }
 a { text-decoration: none; }
+/*? IDs */
+#hero { scroll-margin-top: calc(var(--header-height) + 50px); }
+#noticias, #redes { scroll-margin-top: calc(var(--header-height) + 1.5rem); }
 
 .content { width: 100%; max-width: 1160px; margin: 0 auto; } 
-/* TODO: CHANGE REM TO PX */
-.main-header { border: 1px dashed rebeccapurple; z-index: var(--header-z-index); height: 69px; position: sticky; inset: 0; background-color: var(--carbon); }
+
+/*? HEADER */
+.main-header { height: 100px; position: sticky; inset: 0; background-color: var(--carbon); z-index: 9999999;}
 .main-header .content { height: 100%; display: flex; align-items: center; justify-content: space-between; }
-.main-header .content .logo figure { height: 50px; width: 50px; }
-.main-header .content .logo img { height: 100%; width: 100%; }
-.main-header .navbar ul { display: flex; gap: 16px;}
+.main-header .content .logo figure { height: 70px; aspect-ratio: 1; }
+.main-header .content .logo img { height: 100%; width: 100%; transition: .2s filter linear;}
+.main-header .content .logo img:hover { filter: drop-shadow(-2px 1px 5px  var(--oro)); }
+.main-header .navbar ul { display: flex; gap: 3rem;}
+.main-header .navbar li { position: relative; padding-bottom: 8px;}
+.main-header .navbar li a { letter-spacing: 2px; text-transform: uppercase; font-weight: 700; font-size: 1.2rem; color: grey;}
+.main-header .navbar li a:hover {color: var(--oro);}
+.main-header .navbar li a:after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; width: 100%; height: 3px; background-color: var(--oro); transform: scaleX(0);  transition: transform 0.3s;}
+.main-header .navbar li a:hover:after { transform: scaleX(1);}
 
-.main-content {  padding: 2rem 0; display: flex; flex-direction: column; gap: 1.5rem; }
+#main { padding: 50px 0; }
+.main-content {  display: flex; flex-direction: column; gap: 1.5rem; }
 
-.main-footer { border: 1px dashed rebeccapurple; height: 200px; display: flex; align-items: center; justify-content: center; } 
+/*? HERO */
+.hero .content {border-radius: 4px; background-color: var(--carbon);padding: 2rem 3rem; height: 650px; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.hero .content .frame { height: 100%; position: relative; }
+.hero .content .frame .shadow {  position: absolute; width: 100%; height: 100%; box-shadow: inset 0px 0px 40px 30px var(--carbon); top: 0; left: 0; }
+.hero .content .frame .text-container { position: absolute; background-color: var(--carbon); width: fit-content; z-index: 10;}
+#hero-title { inset: 48px auto auto 40px; rotate: -6deg; transform: skew(-9deg); padding: .3rem 2rem; background-color: var(--oro); color: var(--carbon);}
+.hero .content .frame .title {  font-size: 4rem; font-weight: 900;  transform: skew(9deg); }
+#hero-subtitle { inset: auto 30px 10px auto; transform: skew(-6deg); padding: 2rem 0 2rem 2rem; background-color: var(--carbon); color: var(--oro); }
+.hero .content .frame .subtitle { font-size: 1.8rem; font-weight: 500; transform: skew(6deg); max-width: 22ch;}
+.hero .content .frame figure { height: 100%; overflow: hidden; }
+.hero .content .frame figure img { transition: all .4s ease-in-out; }
+.hero .content .frame figure:hover img { scale: 1.1;}
+.hero .content .frame img { height: 100%; }
 
-/*! NEWS THUMBNAILS */
+
+/*? NEWS THUMBNAILS */
 .news-thumbnails .content { border: 1px dashed rebeccapurple; height: 120px; display: flex; gap: 1rem; }
 .news-thumbnails .content .news-thumbnail { border: 1px dashed cornflowerblue; width: 100%; max-width: 33.33%; }
 
-/*! NEWS */
+/*? NEWS */
 .news .content { border: 1px dashed rebeccapurple; display: flex; gap: 1rem; }
 
 .news .content .news-previews { border: 1px dashed cornflowerblue; width: 100%; max-width: 66.3%; display: flex; flex-direction: column; gap: 1rem 0; }
@@ -29,8 +54,8 @@ a { text-decoration: none; }
 .news .content .news-previews .card-content { display: flex; flex-direction: column; }
 
 .news .content .news-side-panel { border: 1px dashed cornflowerblue; flex: 1; }
-.news .content .news-side-panel figure {}
+.news .content .news-side-panel figure { padding: 0;}
 .news .content .news-side-panel figure img { height: 100%; width: 100%;}
 
-/*! HERO */
-.hero .content { border: 1px dashed rebeccapurple; height: 400px; display: flex; flex-direction: column; }
+
+.main-footer { border: 1px dashed rebeccapurple; height: 200px; display: flex; align-items: center; justify-content: center; } 

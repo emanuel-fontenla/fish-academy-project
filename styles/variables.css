@@ -8,8 +8,8 @@
 :root {
   /* BREAKPOINTS */
   
-  /* Z-INDEXES */
-  --header-z-index: 90;
+  /* HEIGHT */
+  --header-height: 100px;
   /* COLORS */
   --oro: #FECC02;
   --carbon: #050505;
