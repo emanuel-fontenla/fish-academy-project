@@ -53,9 +53,20 @@ a { text-decoration: none; }
 .news .content .news-previews .card-img img { border: 1px dashed rebeccapurple; height: 100%; width: 100%; object-fit: cover; }
 .news .content .news-previews .card-content { display: flex; flex-direction: column; }
 
-.news .content .news-side-panel { border: 1px dashed cornflowerblue; flex: 1; }
-.news .content .news-side-panel figure { padding: 0;}
-.news .content .news-side-panel figure img { height: 100%; width: 100%;}
+.news .content .tik-tok-panel {  flex: 1; position: relative; }
+.news .content .tik-tok-panel video {  border-radius: 10px; }
+.news .content .tik-tok-panel .tik-tok-container { position: absolute; inset:30px 30px auto auto; display: flex; flex-direction: column; gap:4px; color: whitesmoke; }
+.news .content .tik-tok-panel .tik-tok-user { font-size: .83rem; }
+.news .content .tik-tok-panel figure { height: 20px; display: flex; align-items: center; gap: 5px; }
+.news .content .tik-tok-panel figure span { letter-spacing: -1px; font-size: 1.1rem; font-weight: 900; padding-top: 5px;}
+.news .content .tik-tok-panel figure img { height: 100%; animation: tiktok 0.28s infinite;}
+@keyframes tiktok {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(2px, 2px) rotate(2deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-2px, 2px) rotate(-2deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
 
 
 .main-footer { border: 1px dashed rebeccapurple; height: 200px; display: flex; align-items: center; justify-content: center; } 
