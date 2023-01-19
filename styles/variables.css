@@ -7,7 +7,10 @@
 /** VARIABLES */
 :root {
   /* BREAKPOINTS */
-  
+  --breakpoint-mobile: 480px; 
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1280px;
   /* MAIN */
   --main-padding: 2rem;
   --main-gap: 2rem;

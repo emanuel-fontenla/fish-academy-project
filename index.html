@@ -4,7 +4,10 @@
     <!-- META -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+    />
     <!--* STYLES -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/variables.css" />
@@ -14,8 +17,13 @@
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
     <!-- TITLE -->
     <title>Robeiro Blog</title>
+    <!-- SCRIPTS -->
+    <script src="js/sidenav.js" defer></script>
   </head>
   <body>
+    <!--! OVERLAY  -->
+    <div id="overlay" class="overlay"></div>
+
     <!--! HEADER -->
     <header class="main-header">
       <div class="content">
@@ -28,13 +36,19 @@
           </figure>
         </a>
 
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
           <ul>
             <li><a href="#hero">Principal</a></li>
             <li><a href="#noticias">Noticias</a></li>
             <li><a href="#redes">Redes</a></li>
           </ul>
         </nav>
+        <div id="hamburger" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
 
