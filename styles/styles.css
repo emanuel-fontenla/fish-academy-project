@@ -102,7 +102,9 @@ a { text-decoration: none; cursor: pointer; }
 .news-thumbnails .content { height: auto; display: flex; gap: 1rem; }
 .news-thumbnails .content .news-thumbnail { display: flex; flex-direction: column; width: 100%; max-width: 33.33%; border:2px solid var(--carbon); border-radius: 6px; background-color: var(--carbon); cursor: pointer;}
 .news-thumbnails .content .news-thumbnail figure { height: 180px; }
-.news-thumbnails .content .news-thumbnail figure img { height: 100%; width: 100%; object-fit: cover; overflow: hidden; border-top-right-radius: 6px; border-top-left-radius: 6px;}
+.news-thumbnails .content .news-thumbnail figure img { height: 100%; width: 100%; object-fit: cover; border-top-right-radius: 6px; border-top-left-radius: 6px;}
+#lolo-robatto { object-position: top; }
+#festejo-robatto { object-position: bottom; }
 .news-thumbnails .content .news-thumbnail .info { padding: 1rem; display: flex; flex-direction: column; gap: .8rem;}
 .news-thumbnails .content .news-thumbnail .date { font-size: 1.3rem; font-weight: 500; letter-spacing: 1px; color: var(--gris); }
 .news-thumbnails .content .news-thumbnail .title { font-size: 2rem; font-weight: 800; letter-spacing: 1px; color: var(--oro);}
@@ -138,11 +140,11 @@ a { text-decoration: none; cursor: pointer; }
 .news .content .news-details .card:last-child { border: unset; }
 .news .content .news-details .card:nth-child(odd) { flex-direction: row-reverse; }
 .news .content .news-details .card:nth-child(odd) a { align-self: flex-start; }
-.news .content .news-details .card-img figure { height: 150px; width: 150px; }
-.news .content .news-details .card-img img { height: 100%; width: 100%; object-fit: cover; }
+.news .content .news-details .card-img figure { height: 180px; width: 250px; }
+.news .content .news-details .card-img img { height: 100%; width: 100%;  }
 .news .content .news-details .card-content { display: flex; flex-direction: column; gap: 14px; }
 .news .content .news-details .card-content .card-title { font-size: 1.7rem; color: var(--oro); }
-.news .content .news-details .card-content .card-description { font-size: 1.2rem; color: var(--gris); flex: 1; }
+.news .content .news-details .card-content .card-description { font-size: 1.2rem; line-height: 1.6; color: var(--gris); flex: 1; }
 .news .content .news-details .card-content .card-link { align-self: flex-end; text-decoration: underline; color: var(--oro); }
 
 @media(max-width: 768px) {
