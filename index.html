@@ -16,9 +16,9 @@
     <!-- FAVICON -->
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
     <!-- TITLE -->
-    <title>Robeiro Blog</title>
+    <title>Robatto Blog</title>
     <!-- SCRIPTS -->
-    <script src="js/sidenav.js" defer></script>
+    <script src="js/scripts.js" defer></script>
   </head>
   <body>
     <!--! OVERLAY  -->
@@ -184,7 +184,7 @@
                   />
                   <span>TikTok</span>
                 </figure>
-                <span class="tik-tok-user">@robeiro_CAP</span>
+                <span class="tik-tok-user">@robatto_CAP</span>
               </div>
               <video autoplay loop muted controls width="100%" height="100%">
                 <source src="assets/mp4/robeiro-dancing.mp4" type="video/mp4" />
@@ -195,6 +195,35 @@
       </div>
     </main>
 
+    <!--! CONTACT-US MODAL  -->
+    <div id="contact-us-modal" class="static-glow contact-us-modal">
+      <div class="modal-content">
+        <h3>Prendelo fuego! 🔥</h3>
+        <p>Tenes datita sobre Robatto fuera de las canchas?</p>
+        <p>Tu colaboración puede ser remunerada.</p>
+        <p>Escribinos a <span>robatto-blog@info.com.uy</span></p>
+        <button id="contact-us-close-btn">
+          CERRAR
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="none" fillRule="evenodd">
+              <path d="M0 0h24v24H0z" />
+              <path
+                stroke="#FECC02"
+                strokeWidth="{2}"
+                strokeLinecap="round"
+                d="M17 7 7 17M7 7l10 10"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+
     <!--! FOOTER -->
     <footer class="main-footer">
       <div class="content">
@@ -202,22 +231,24 @@
           <div class="contact-us">
             <div class="logo-container">
               <figure>
-                <img src="assets/img/logo.png" alt="Robeiro website logo" />
+                <img src="assets/img/logo.png" alt="Robatto website logo" />
               </figure>
               <div>
-                <h3>Robeiro Blog</h3>
-                <button>Contactanos</button>
+                <h3>Robatto Blog</h3>
+                <button id="contact-us" class="glow-on-hover">
+                  Contactanos
+                </button>
               </div>
             </div>
           </div>
-          <div class="links-container">
+          <div class="links-container border-container">
             <ul>
               <li><a href="#hero">Principal</a></li>
               <li><a href="#noticias">Noticias</a></li>
               <li><a href="#redes">Redes</a></li>
             </ul>
           </div>
-          <div class="social-media-container">
+          <div class="social-media-container border-container">
             <a href="https://www.instagram.com/martin_robatto" target="_blank">
               <figure>
                 <img
@@ -251,7 +282,7 @@
           </div>
         </div>
         <p class="copyright">
-          Copyright © 2023 Robeiro Inc. All rights reserved.
+          Copyright © 2023 Robatto Inc. All rights reserved.
         </p>
       </div>
     </footer>
